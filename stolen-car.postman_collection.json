@@ -1,0 +1,134 @@
+{
+	"info": {
+		"_postman_id": "7c41858c-9d00-477f-b55e-666f01169a0f",
+		"name": "stolen-car",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create-Police",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"Batman Singh\",\n\t\"area\": \"Samastipur Tajpur\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://stolencar-server.herokuapp.com/api/createpolice",
+					"protocol": "https",
+					"host": [
+						"stolencar-server",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"createpolice"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Case Report",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"Delhi Singh\",\n\t\"email\": \"S12@gmail.com\",\n\t\"car_detail\": \"Car NO: 223223, CarName: Aqua\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://stolencar-server.herokuapp.com/api/case",
+					"protocol": "https",
+					"host": [
+						"stolencar-server",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"case"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getAll Cases",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://stolencar-server.herokuapp.com/api/cases",
+					"protocol": "https",
+					"host": [
+						"stolencar-server",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"cases"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Case Resolved",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://stolencar-server.herokuapp.com/api/casedone/5ecb9951dfab360017bf6ad5",
+					"protocol": "https",
+					"host": [
+						"stolencar-server",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"casedone",
+						"5ecb9951dfab360017bf6ad5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get All Polices",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://stolencar-server.herokuapp.com/api/polices",
+					"protocol": "https",
+					"host": [
+						"stolencar-server",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"polices"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

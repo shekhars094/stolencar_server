@@ -5,7 +5,11 @@ const {
     getAllPolice,
 } = require("../controllers/police_register");
 
+// create police router
+
 router.post("/createpolice", createPolice);
+
+// get all police list
 
 router.get("/polices", getAllPolice);
 

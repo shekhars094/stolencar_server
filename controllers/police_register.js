@@ -29,4 +29,6 @@ const getAllPolice = async (req, res) => {
     }
 };
 
+// Exporting all the controller
+
 module.exports = { createPolice, getAllPolice };
