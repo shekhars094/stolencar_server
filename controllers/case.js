@@ -58,7 +58,9 @@ const caseDone = async (req, res) => {
 
 const cases = async (req, res) => {
     try {
-        const allCases = await User.find();
+        const allCases = await User.find()
+            .populate("assigned_police", "name")
+            .exec();
         if (!allCases) {
             return res.json({ msg: "Cases Are not Active" });
         }
